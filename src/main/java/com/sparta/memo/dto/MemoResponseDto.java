@@ -10,7 +10,7 @@ public class MemoResponseDto {
     private String contents;
 
     public MemoResponseDto(Memo memo) {
-        this.id = memo.getId();;
+        this.id = memo.getId();
         this.username = memo.getUsername();
         this.contents = memo.getContents();
     }
