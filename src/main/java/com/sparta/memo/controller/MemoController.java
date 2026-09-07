@@ -13,9 +13,9 @@ import java.util.List;
 public class MemoController {
     private final MemoService memoService;
 
-
-    public MemoController(JdbcTemplate jdbcTemplate) {
-        this.memoService = new MemoService(jdbcTemplate);
+    // 만들어진 서비스 생성자로 받아와서 사용
+    public MemoController(MemoService memoService) {
+        this.memoService = memoService;
     }
 
     @PostMapping("/memos")
